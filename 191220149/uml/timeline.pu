@@ -1,0 +1,78 @@
+' https://www.bilibili.com/video/BV1zQ4y1d7dQ?p=5
+' 7:48 ~ 8:33
+
+@startuml
+actor       老头   as oldman
+actor       穿山甲    as pangolin  #Black
+actor       蝎子精    as scorpion   #Purple
+actor       蝙蝠兵    as bats       #Grey
+actor       蟋蟀      as cricket    #Green
+actor       大娃      as dawa       #Red
+actor       葫芦们    as hulu       #Blue
+entity      悬崖  as cliff #White
+
+scorpion -[#Grey]> pangolin : 抓住
+pangolin -[#Green]> pangolin : 挣扎
+
+scorpion -[#Grey]> pangolin : 笑
+note right
+    嘿嘿！
+end note
+
+pangolin -[#Grey]> scorpion : 喊
+note right
+    你们这些坏蛋！
+end note
+
+scorpion -[#Grey]> bats : 把穿山甲丢了过去
+bats -[#Grey]> pangolin : 控制住
+pangolin -[#Green]> pangolin : 挣扎
+
+cricket -[#Grey]> scorpion : 报告
+note right
+    报告大王！
+    大事不好，
+    老头和瞎眼葫芦逃跑啦！
+end note
+
+scorpion -[#Blue]> scorpion : 发怒
+note right: 呀呀呀...
+
+bats -[#Grey]> scorpion : 把穿山甲丢了过去
+scorpion -[#Red]> pangolin : 造成伤害
+note left: 掐
+pangolin -[#Grey]> scorpion : 喊
+note right
+    放开我！
+    你们这些坏蛋，
+    害人精！
+end note
+
+pangolin -[#Red]> pangolin : 七窍流血
+scorpion -[#Grey]> cliff : 把穿山甲丢下悬崖
+
+oldman -[#Green]> oldman : 流泪
+note right: 啊...
+
+scorpion -[#Grey]> bats : 吼叫
+note right
+    快把老头给我抓回嘞！
+end note
+
+bats -[#Grey]> oldman : 寻找
+dawa -[#Grey]> hulu : 骂
+note right
+    嘿！你们这些懒虫，还不快起床！
+end note
+
+cliff -[#Grey]> cliff : 报幕
+note right
+    还没出生便骂人懒虫！
+    下一回：穿山甲之死？
+    duel standby!
+end note
+
+
+
+@enduml
+
